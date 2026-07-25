@@ -51,7 +51,7 @@ export interface StockMovement {
 
 export interface ActivityItem {
   id: string;
-  type: "SALE" | "STOCK_ALERT" | "RESTOCK" | "PRODUCT_ADD" | "REPORT_GENERATE" | "EXPENSE";
+  type: "SALE" | "STOCK_ALERT" | "STOCK_EMPTY" | "RESTOCK" | "PRODUCT_ADD" | "REPORT_GENERATE" | "EXPENSE";
   title: string;
   description: string;
   time: string;
