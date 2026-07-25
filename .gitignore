@@ -1,0 +1,24 @@
+# Dependency directories
+node_modules/
+frontend/node_modules/
+backend/vendor/
+
+# Next.js build output
+frontend/.next/
+frontend/out/
+
+# Laravel files
+backend/.env
+backend/storage/*.key
+backend/storage/framework/cache/data/*
+backend/storage/framework/sessions/*
+backend/storage/framework/views/*
+backend/storage/logs/*.log
+backend/bootstrap/cache/*.php
+
+# IDEs and OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.log
