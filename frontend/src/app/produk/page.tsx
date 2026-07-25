@@ -305,7 +305,7 @@ export default function ProdukPage() {
       success = await addProduct({
         name: data.name,
         sku: data.sku,
-        category: data.category,
+        category: data.category as any,
         unit: data.unit,
         price: Number(data.price),
         cost_price: Number(data.cost_price),
@@ -316,7 +316,7 @@ export default function ProdukPage() {
       success = await updateProduct(productModal.product.id, {
         name: data.name,
         sku: data.sku,
-        category: data.category,
+        category: data.category as any,
         unit: data.unit,
         price: Number(data.price),
         cost_price: Number(data.cost_price),
