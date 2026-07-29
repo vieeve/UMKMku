@@ -33,11 +33,11 @@ PRD ini menjadi dasar untuk:
 
 Aplikasi menggunakan arsitektur **Client–Server**.
 
-Frontend bertugas menampilkan antarmuka pengguna dan berkomunikasi dengan backend melalui REST API.
+Frontend bertugas menampilkan antarmuka pengguna dan berkomunikasi dengan backend melalui REST API. Pada environment production, Frontend di-deploy menggunakan **Vercel**.
 
-Backend bertugas menangani business logic, validasi data, autentikasi, serta komunikasi dengan database.
+Backend bertugas menangani business logic, validasi data, autentikasi, serta komunikasi dengan database. Pada environment production, Backend di-deploy menggunakan **Render** (via Docker).
 
-Database digunakan sebagai penyimpanan utama seluruh data aplikasi.
+Database digunakan sebagai penyimpanan utama seluruh data aplikasi. Pada environment production, Database di-hosting menggunakan layanan **Aiven** (MySQL dengan SSL).
 
 ---
 
@@ -63,7 +63,14 @@ Database digunakan sebagai penyimpanan utama seluruh data aplikasi.
 
 ## Database
 
-- MySQL dengan Laragon
+- MySQL dengan Laragon (Untuk Local Development)
+- Aiven MySQL dengan SSL (Untuk Production)
+
+## Deployment (Production)
+
+- **Frontend:** Vercel
+- **Backend:** Render (Dockerized Laravel)
+- **Database:** Aiven (MySQL)
 
 Ketentuan:
 
